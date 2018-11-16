@@ -1,0 +1,47 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/css/rs.css">
+
+	<title>Random Seinfeld!</title>
+</head>
+
+<body>
+	<div class="gridtainer">
+		<div id="titlepanel">
+			<h1>Random Seinfeld!</h1>
+		</div>
+		<div id="buttonpanel">
+			<button id="rnd-any">Any Episode</button>
+			<button id="rnd-jerry">Jerry</button>
+			<button id="rnd-george">George</button>
+			<button id="rnd-kramer">Kramer</button>
+			<button id="rnd-elaine">Elaine</button>
+		</div>
+		<div id="episodepanel">
+			<h3 id="ep-title"></h3>
+			<p>
+				<span id="ep-director"></span>
+				<br />
+				<span id="ep-writers"></span>
+				<br />
+				<br />
+				<span id="ep-desc"></span>
+			</p>
+			<a id="ep-hulu-btn" href="" target="_blank">Watch on Hulu</a>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/rs.js"></script>
+</body>
+
+</html>
+{{end}}
